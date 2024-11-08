@@ -3,16 +3,19 @@ import java.util.Scanner;
 public class Lab2 {
     public static void main(String[] args) {
 
-        Scanner kbd = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter your cost and totalSales");
-        int cost = kbd.nextInt();
-        int totalSales = kbd.nextInt();
+        int usernum = sc.nextInt();
 
-        int profit = totalSales - cost;
+        if (usernum < 0) {
+            System.out.println("Your input is less than 0");
+        }
+            else {
+                System.out.println("Your input is greater than 0 ");
+            }
+            
+            
+        }
 
-        System.out.println(profit);
 
-    
     }
-}
